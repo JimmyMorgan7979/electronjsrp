@@ -1,0 +1,44 @@
+.container {
+    background-color: lightgrey;
+}
+.action {
+    background-color:tomato;
+}
+.row2 {
+    height: 500px;
+    margin-top:10px;   
+}
+.row1 {
+    height:35px;
+    text-align:center;
+    padding-top: .5rem;
+}
+.row3 {
+    height:100px;
+    text-align:center;
+}
+.row4 {
+    height:50px;
+    text-align:center;
+}
+/*HEALTH TANK */
+.health {
+    transition: height 2s;
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 0%;
+    width: 50%;
+    background: RED;
+}
+/*MANA TANK */
+.mana {
+    transition: height 2s;
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 20%;
+    width: 50%;
+    background: blue;
+}
+
