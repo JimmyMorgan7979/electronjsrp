@@ -1,6 +1,7 @@
 'use strict';
+
 const fs = require('fs');
-let player = {};
+var player = {};
 //UPDATE and SAVE PLAYER
 function updatePlayer(){
     let data = JSON.stringify(player);
@@ -9,11 +10,13 @@ function updatePlayer(){
 //LOAD PLAYER FROM FILE
 // TODO::::::::::::::::::: CHANGE THE LOAD FILE TO INCLUDE ALL CHARACTERS SAVED
 
+
 function loadPlayer(){
     let rawdata = fs.readFileSync('Jimmy.json');
-    let player = JSON.parse(rawdata);
-    console.log(player);
+    player = JSON.parse(rawdata); 
+    console.log(player)
 }
+
 
 
 
